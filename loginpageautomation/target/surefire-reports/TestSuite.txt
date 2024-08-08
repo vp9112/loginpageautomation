@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.12 s <<< FAILURE! -- in TestSuite
+runner.TestRunner.runScenario["Successful login", "Optional[Login]"](1) -- Time elapsed: 8.736 s <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53039/devtools/browser/18259a4e-bf25-4b20-aca9-d1d3894e78d6
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Prabhakarans-MacBook-Pro.local', ip: '2401:4900:7b85:9719:9e7:519d:50b2:3be%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '21.0.3'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:116)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+	at testcase.LoginTest.setUp(LoginTest.java:20)
+
